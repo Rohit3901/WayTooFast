@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+
+    app:contentPaddingBottom="@dimen/activity_horizontal_margin"
+        app:cardPreventCornerOverlap="false"
+    app:cardMaxElevation="@dimen/activity_vertical_margin"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+
+
+        android:outlineProvider="bounds"
+        android:longClickable="true"
+        android:clickable="true">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="60dp"
+            android:id="@+id/photo"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/filter"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_alignTop="@+id/name"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/name" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Inorbit Mall"
+            android:id="@+id/name"
+
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:paddingStart="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:contextClickable="true"
+            android:clickable="true" /><![CDATA[
+
+
+
+
+        />
+
+    ]]>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

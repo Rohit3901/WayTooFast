@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saketmayank.wtf2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chooselocation" />
+        <activity android:name=".Malls" />
+        <activity android:name=".MallName" />
+        <activity android:name=".ReccyclerViewActivity" />
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".MainActivityFoodName" />
+        <activity android:name=".Checkout" />
+        <activity android:name=".payubiz" />
+        <activity android:name=".PayMentGateWay" />
+        <activity android:name=".finalpage"></activity>
+    </application>
+
+</manifest>

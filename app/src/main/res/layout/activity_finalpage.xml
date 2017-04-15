@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_finalpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saketmayank.wtf2.finalpage"
+    android:background="@color/vpi__bright_foreground_holo_dark">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:id="@+id/toolbar2" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/hom"
+        android:id="@+id/home"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintRight_toLeftOf="@+id/textView15"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:text="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="109dp"
+        tools:layout_editor_absoluteX="170dp"
+        android:id="@+id/textView17"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="7dp"
+        android:layout_above="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:text="Payment Successful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="279dp"
+        tools:layout_editor_absoluteX="81dp"
+        android:id="@+id/textView18"
+        android:textSize="22sp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="normal|bold|italic"
+        android:layout_above="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:text="Order Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="15dp"
+        tools:layout_editor_absoluteX="41dp"
+        android:id="@+id/textView15"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/home"
+        android:layout_toEndOf="@+id/home"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="Hi Saket ,you are #5 in the line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="345dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:id="@+id/textView19"
+        android:textSize="25sp"
+        android:textColor="@color/orange"
+        android:layout_marginBottom="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/pro"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/toolbar2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="minutes left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="139dp"
+        tools:layout_editor_absoluteX="145dp"
+        android:id="@+id/textView16"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="52dp"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

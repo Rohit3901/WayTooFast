@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saketmayank.wtf.Chooselocation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@layout/header2"
+
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="@drawable/bb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PICK A REGION"
+            android:id="@+id/textView3"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Cities"
+        android:id="@+id/textView4"
+        android:textSize="16dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView4">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/delhi">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="DELHI"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv1" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@+id/delhi"
+            android:layout_alignParentStart="true"
+            android:id="@+id/chennai">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="CHENNAI"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv2" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@+id/chennai"
+            android:layout_alignParentStart="true"
+            android:id="@+id/banglore">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="BANGLORE"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv3" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
